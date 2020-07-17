@@ -19,6 +19,7 @@ class RingBuffer:
             self.storage[self.index] = item
         # increase index count by 1
         self.index += 1
+
         # if index and capacity are equal
         if self.index == self.capacity:
             # index reset to 0
